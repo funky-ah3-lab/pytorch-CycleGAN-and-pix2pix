@@ -324,10 +324,10 @@ class ResnetGenerator(nn.Module):
         Parameters:
             input_nc (int)      -- the number of channels in input images
             output_nc (int)     -- the number of channels in output images
-            ngf (int)           -- the number of filters in the last conv layer
+            ngf (int)           -- the number of filters in the last conv layer # 마지막 레이어 필터가 fcl 인건지 확인 필요
             norm_layer          -- normalization layer
             use_dropout (bool)  -- if use dropout layers
-            n_blocks (int)      -- the number of ResNet blocks
+            n_blocks (int)      -- the number of ResNet blocks  # 갯수 줄여서 레이어를 가볍게 할 수 있는지 확인
             padding_type (str)  -- the name of padding layer in conv layers: reflect | replicate | zero
         """
         assert(n_blocks >= 0)
